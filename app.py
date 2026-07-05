@@ -34,10 +34,10 @@ experience = st.number_input(
 
 if st.button("Predict Salary"):
     input_encoded = pd.DataFrame(
-        0,
-        index=[0],
-        columns=artifact["feature_columns"]
-    )
+    0.0,
+    index=[0],
+    columns=artifact["feature_columns"]
+)
 
     input_encoded.loc[0, "Age"] = age
     input_encoded.loc[0, "Years of Experience"] = experience
